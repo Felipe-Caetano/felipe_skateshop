@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    max-width: 2048px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    padding: 16px 0 0;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 56px;
+}
+
+header .container {
+    margin-top:24px;
+    padding-bottom: 16px; 
+    display: flex;  /*PARA DEIXAR OS ITENS DO CABEÇALHO UM AO LADO DO OUTRO*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+h1 {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    font-weight: bold;
+}
+
+ul {
+    padding: 8px;
+    border-right: solid #fff 1px;
+}
+
+.menu {
+    display: flex;
+    padding: 8px;
+}
+
+img {
+    max-width: 100%; /*PARA MANTER AS IMAGENS DENTRO DA ÁREA VISÍVEL DA TELA*/
+    width: 720px;
+    padding: 16px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.sobre h2 {
+    padding-bottom: 8px;
+}
+
+.secaoSobre {
+    display: flex;
+}
+
+.secaoSobre p {
+    padding-bottom: 32px;
+}
+
+.border {
+    border:rgb(141, 141, 141) solid 1px;
+    margin-bottom: 36px;
+}
+
+.produtos h2 {
+    padding-top: 24px;
+    padding-bottom: 8px;
+}
+
+.container .produto img {
+    width: 248px;
+}
+
+article h3 {
+    color: black;
+    padding: 6px;
+}
+
+.produto p {
+    font-weight: normal;
+    color: black;
+}
+
+article button {
+    background-color: rgb(29, 104, 29);
+    color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 180px;
+    height: 40px;
+    border: none;
+    margin: 8px;
+}
+
+article button:hover{
+    background-color: rgb(50, 163, 50);
+    color: white;
+    transform: scale(1.2)
+}
+
+.vendas {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    color: #fff;
+    background-color: black;
+    margin-top: 48px;
+    text-align: center;
+    height: 80px;
+    padding-top:36px;
+}
+
+
+
+@media screen and (max-width: 1023px) {
+    .container {
+        width: 95%;
+    }
+    .secaoSobre {
+        display: block;
+    }
+
+    .border {
+        max-width: 40%;
+        margin: 0 auto 32px auto;
+    }
+
+    .sobre {
+        text-align: center;
+    }
+
+    .vendas {
+        display: grid;
+        grid-template-columns: repeat(2, 48%)
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        width: 98%;
+    }
+    .vendas {
+        display: grid;
+        grid-template-columns: repeat(1, 90%);
+        justify-content: center;
+    }
+
+}
+
